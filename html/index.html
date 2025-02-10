@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ACEP SecComms Services</title>
+
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                text-align: center;
+                background-color: #ffffff;
+                margin: 0;
+                padding: 20px;
+            }
+            .container {
+                max-width: 800px;
+                margin: auto;
+                background: white;
+                padding: 20px;
+                border-radius: 10px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            }
+            h1 {
+                color: #333;
+            }
+            .service-container {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 20px;
+            }
+            .service-box {
+                background: white;
+                padding: 15px;
+                border-radius: 10px;
+                box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+                text-align: center;
+                width: 250px;
+            }
+            .service-box img {
+                max-height: 30px;
+                height: auto;
+            }
+            .service-box a {
+                text-decoration: none;
+                color: #007BFF;
+                font-size: 18px;
+                display: block;
+                margin-top: 10px;
+            }
+            .service-box a:hover {
+                text-decoration: underline;
+            }
+        </style>
+    </head>
+    <body>
+
+    <a title="TLP:AMBER+STRICT - Limited disclosure, restricted to participants’ organization." href="https://www.cisa.gov/news-events/news/traffic-light-protocol-tlp-definitions-and-usage" target="_blank" style="text-decoration: none;">
+        <div id="tlp-amber-strict-banner" style="position: relative; width: 100%; left: calc(-1 * var(--body-margin-left, 0px)); padding: 0px;">
+            <div id="tlp-amber-strict-banner-content" style="display: flex; justify-content: space-between; align-items: center; padding-top: 0px; padding-bottom: 0px; padding-left: 10px; padding-right: 10px; color: #FFFFFF; background-color: #ffffff; border: 1px solid #000000;">
+                <!-- Left section: TLP label -->
+                <div style="display: flex; gap: 10px; align-items: center;">
+                    <div style="display: flex; gap: 10px; border: 2px solid #000000; border-radius: 5px; background-color: #a3a3a3; padding: 5px; width: max-content;">
+                        <div style="width: 20px; height: 20px; border: 2px solid #bbbbbb; border-radius: 50%; background-color: #bbbbbb;"></div>
+                        <div style="width: 20px; height: 20px; border: 2px solid #000000; border-radius: 50%; background-color: #FFC000;"></div>
+                        <div style="width: 20px; height: 20px; border: 2px solid #bbbbbb; border-radius: 50%; background-color: #bbbbbb;"></div>
+                    </div>
+                    <span style="font-weight: bold; font-size: 12pt; font-family: Helvetica, Arial, sans-serif; color: #FFC000; background-color: #000000; padding: 8px;">TLP:AMBER+STRICT</span>
+                    <!-- <p style="font-size: 11pt; font-family: Helvetica, Arial, sans-serif; color: #FFC000; padding: 8px;">Limited disclosure, restricted to participants’ organization.</p> -->
+                </div>
+
+                <!-- Right section: Logos -->
+                <div style="display: flex; gap: 10px; align-items: center;">
+                    <p style="font-size: 11pt; font-family: Helvetica, Arial, sans-serif; color: #FFC000; padding: 8px;">Limited disclosure, restricted to participants’ organization.</p>
+                    <a title="Alaska Center for Energy and Power" href="https://acep.uaf.edu/" target="_blank" style="text-decoration: none;"><img src="img/ACEPLogo.png" alt="ACEP Logo" style="height: 30px; width: auto;"></a>
+                    <a title="University of Alaska Fairbanks" href="https://www.uaf.edu/" target="_blank" style="text-decoration: none;"><img src="img/uaflogoBlue.png" alt="UAF Logo" style="height: 30px; width: auto;"></a>
+                </div>
+            </div>
+        </div>
+    </a>
+
+    <hr>
+
+<!-- MAIN PAGE CONTENT BEGIN -->
+
+<h1>ACEP SecComms Services</h1>
+<h2>Proof of Concept / Testing</h2>
+
+<p>This is a suite of services for Secure Communications for internal ACEP use.</p>
+<p><b>NOTE:</b> These services are currently for Proof of Concept use, and are not yet deployed to production.</p>
+
+<div class="container">
+    <div class="service-container">
+        <a href="https://seccomm.secdev.acep.uaf.edu/" target="_blank" style="text-decoration: none;">
+            <div class="service-box">
+                <img src="img/ACEP-50px.png" alt="ACEP Logo">
+                <br>
+                SecComm Home
+            </div>
+        </a>
+
+        <a href="setup/" target="_blank" style="text-decoration: none;">
+            <div class="service-box">
+                <img src="img/069-gear.png" alt="ACEP Logo">
+                <br>
+                SecComm Setup
+            </div>
+        </a>
+
+        <a href="https://auth.secdev.acep.uaf.edu/" target="_blank" style="text-decoration: none;">
+            <div class="service-box">
+                <img src="img/authentik.png" alt="Authentik Logo">
+                <br>
+                Authentik (Accounts)
+            </div>
+        </a>
+
+        <a href="https://mattermost.secdev.acep.uaf.edu/" target="_blank" style="text-decoration: none;">
+            <div class="service-box">
+                <img src="img/Mattermost-512x512bb.jpg" alt="Mattermost Logo">
+                <br>
+                Mattermost (Chat)
+            </div>
+        </a>
+
+        <a href="https://plane.secdev.acep.uaf.edu/" target="_blank" style="text-decoration: none;">
+            <div class="service-box">
+                <img src="img/plane-logo-with-text.png" alt="Plane Logo">
+                <br>
+                Plane (Projects)
+            </div>
+        </a>
+        
+        <a href="https://cryptpad.secdev.acep.uaf.edu/" target="_blank" style="text-decoration: none;">
+            <div class="service-box">
+                <img src="img/CryptPad_logo.png" alt="Cryptpad Logo">
+                <br>
+                Cryptpad (Document Collab)
+            </div>
+        </a>
+
+        <a href="https://nextcloud.secdev.acep.uaf.edu/" target="_blank" style="text-decoration: none;">
+            <div class="service-box">
+                <img src="img/nextcloud.png" alt="NextCloud Logo">
+                <br>
+                NextCloud (Files)
+            </div>
+        </a>
+
+        <a href="https://owncloud.secdev.acep.uaf.edu/" target="_blank" style="text-decoration: none;">
+            <div class="service-box">
+                <img src="img/Owncloud-logo-754462641.png" alt="ownCloud Logo">
+                <br>
+                ownCloud (Files)
+            </div>
+        </a>
+    </div>
+</div>
+
+
+
+
+<!-- MAIN PAGE CONTENT END -->
+
+<br>
+<hr>
+
+    <a title="TLP:AMBER+STRICT - Limited disclosure, restricted to participants’ organization." href="https://www.cisa.gov/news-events/news/traffic-light-protocol-tlp-definitions-and-usage" target="_blank" style="text-decoration: none;">
+        <div id="tlp-amber-strict-banner" style="position: relative; width: 100%; left: calc(-1 * var(--body-margin-left, 0px)); padding: 0px;">
+            <div id="tlp-amber-strict-banner-content" style="display: flex; justify-content: space-between; align-items: center; padding-top: 0px; padding-bottom: 0px; padding-left: 10px; padding-right: 10px; color: #FFFFFF; background-color: #ffffff; border: 1px solid #000000;">
+                <!-- Left section: TLP label -->
+                <div style="display: flex; gap: 10px; align-items: center;">
+                    <div style="display: flex; gap: 10px; border: 2px solid #000000; border-radius: 5px; background-color: #a3a3a3; padding: 5px; width: max-content;">
+                        <div style="width: 20px; height: 20px; border: 2px solid #bbbbbb; border-radius: 50%; background-color: #bbbbbb;"></div>
+                        <div style="width: 20px; height: 20px; border: 2px solid #000000; border-radius: 50%; background-color: #FFC000;"></div>
+                        <div style="width: 20px; height: 20px; border: 2px solid #bbbbbb; border-radius: 50%; background-color: #bbbbbb;"></div>
+                    </div>
+                    <span style="font-weight: bold; font-size: 12pt; font-family: Helvetica, Arial, sans-serif; color: #FFC000; background-color: #000000; padding: 8px;">TLP:AMBER+STRICT</span>
+                    <!-- <p style="font-size: 11pt; font-family: Helvetica, Arial, sans-serif; color: #FFC000; padding: 8px;">Limited disclosure, restricted to participants’ organization.</p> -->
+                </div>
+
+                <!-- Right section: Logos -->
+                <div style="display: flex; gap: 10px; align-items: center;">
+                    <p style="font-size: 11pt; font-family: Helvetica, Arial, sans-serif; color: #FFC000; padding: 8px;">Limited disclosure, restricted to participants’ organization.</p>
+                    <a title="Alaska Center for Energy and Power" href="https://acep.uaf.edu/" target="_blank" style="text-decoration: none;"><img src="img/ACEPLogo.png" alt="ACEP Logo" style="height: 30px; width: auto;"></a>
+                    <a title="University of Alaska Fairbanks" href="https://www.uaf.edu/" target="_blank" style="text-decoration: none;"><img src="img/uaflogoBlue.png" alt="UAF Logo" style="height: 30px; width: auto;"></a>
+                </div>
+            </div>
+        </div>
+    </a>
+
+    </body>
+</html>

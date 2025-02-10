@@ -1,2 +1,4 @@
-# acep-infosec-seccomms-website
-ACEP SecComms WebSite
+# ACEP InfoSec SecComms Website
+
+A suite of services for Secure Communications.
+
