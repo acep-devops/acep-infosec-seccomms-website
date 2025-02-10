@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ACEP SecComms Getting Started</title>
+
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                /* text-align: center; */
+                background-color: #ffffff;
+                margin: 0;
+                padding: 20px;
+            }
+            .container {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                max-width: 800px;
+                margin: auto;
+                background: white;
+                padding: 20px;
+                border-radius: 10px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            }
+            h1 {
+                color: #333;
+            }
+            .service-container {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: left;
+                gap: 20px;
+            }
+            .service-box {
+                background: white;
+                padding: 15px;
+                border-radius: 10px;
+                box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+                text-align: center;
+                width: 250px;
+            }
+            .service-box img {
+                max-height: 30px;
+                height: auto;
+            }
+            .service-box a {
+                text-decoration: none;
+                color: #007BFF;
+                font-size: 18px;
+                display: block;
+                margin-top: 10px;
+            }
+            .service-box a:hover {
+                text-decoration: underline;
+            }
+        </style>
+    </head>
+    <body>
+
+        <a title="TLP:AMBER+STRICT - Limited disclosure, restricted to participants’ organization." href="https://www.cisa.gov/news-events/news/traffic-light-protocol-tlp-definitions-and-usage" target="_blank" style="text-decoration: none;">
+            <div id="tlp-amber-strict-banner" style="position: relative; width: 100%; left: calc(-1 * var(--body-margin-left, 0px)); padding: 0px;">
+                <div id="tlp-amber-strict-banner-content" style="display: flex; justify-content: space-between; align-items: center; padding-top: 0px; padding-bottom: 0px; padding-left: 10px; padding-right: 10px; color: #FFFFFF; background-color: #ffffff; border: 1px solid #000000;">
+                    <!-- Left section: TLP label -->
+                    <div style="display: flex; gap: 10px; align-items: center;">
+                        <div style="display: flex; gap: 10px; border: 2px solid #000000; border-radius: 5px; background-color: #a3a3a3; padding: 5px; width: max-content;">
+                            <div style="width: 20px; height: 20px; border: 2px solid #bbbbbb; border-radius: 50%; background-color: #bbbbbb;"></div>
+                            <div style="width: 20px; height: 20px; border: 2px solid #000000; border-radius: 50%; background-color: #FFC000;"></div>
+                            <div style="width: 20px; height: 20px; border: 2px solid #bbbbbb; border-radius: 50%; background-color: #bbbbbb;"></div>
+                        </div>
+                        <span style="font-weight: bold; font-size: 12pt; font-family: Helvetica, Arial, sans-serif; color: #FFC000; background-color: #000000; padding: 8px;">TLP:AMBER+STRICT</span>
+                        <!-- <p style="font-size: 11pt; font-family: Helvetica, Arial, sans-serif; color: #FFC000; padding: 8px;">Limited disclosure, restricted to participants’ organization.</p> -->
+                    </div>
+    
+                    <!-- Right section: Logos -->
+                    <div style="display: flex; gap: 10px; align-items: center;">
+                        <p style="font-size: 11pt; font-family: Helvetica, Arial, sans-serif; color: #FFC000; padding: 8px;">Limited disclosure, restricted to participants’ organization.</p>
+                        <a title="Alaska Center for Energy and Power" href="https://acep.uaf.edu/" target="_blank" style="text-decoration: none;"><img src="../img/ACEPLogo.png" alt="ACEP Logo" style="height: 30px; width: auto;"></a>
+                        <a title="University of Alaska Fairbanks" href="https://www.uaf.edu/" target="_blank" style="text-decoration: none;"><img src="../img/uaflogoBlue.png" alt="UAF Logo" style="height: 30px; width: auto;"></a>
+                    </div>
+                </div>
+            </div>
+        </a>
+    
+        <hr>
+    
+        <!-- MAIN PAGE CONTENT BEGIN -->
+
+        <div class="container">
+            <h1>ACEP SecComms Getting Started</h1>
+        </div>
+
+        <h2>0. Prerequisites</h2>
+
+        <ul>
+            <li>Join your computer to the ACEP Headscale network.</li>
+        </ul>
+
+        <h2>1. Download and install the CA Certificate in your browser</h2>
+
+        <h3>Download the CA Certificate</h3>
+
+        <ul>
+            <li><a href="https://seccomm.secdev.acep.uaf.edu/setup/ca.secdev.acep.uaf.edu.crt">ca.secdev.acep.uaf.edu.crt</a></li>
+        </ul>
+
+        <h3>Install CA in Chrome / Brave / Chromium</h3>
+
+        <ol>
+            <li>Open the <b>Settings</b> page in Chromium or Brave: <pre><a target="_blank" href="chrome://settings/security">chrome://settings/security</a></pre></li>
+            <li>Scroll down and click on <b>Manage certificates</b>.</li>
+            <li>Switch to the <b>Authorities</b> tab.</li>
+            <li>Click <b>Import</b> and select your Root CA certificate file: <pre>ca.secdev.acep.uaf.edu.crt</pre></li>
+            <li>During the import process:</li>
+            <ul>
+                <li>Check <b>Trust this certificate for identifying websites</b>.</li>
+            </ul>
+        </ol>
+
+        <h3>Install CA in Firefox</h3>
+
+        <ol>
+            <li>Open Firefox.</li>
+            <li>Navigate to <b>Settings</b>:</li>
+            <ul>
+                <li>Go to the menu (three horizontal bars in the top right) > <b>Settings</b> > <b>Privacy & Security</b>.</li>
+            </ul>
+            <li>Scroll to the <b>Certificates</b> section and click <b>View Certificates</b>.</li>
+            <li>Switch to the <b>Authorities</b> tab.</li>
+            <li>Click <b>Import</b>:</li>
+            <ul>
+                <li>Select your Root CA certificate file: <pre>ca.secdev.acep.uaf.edu.crt</pre></li>
+                <li>Check <b>Trust this CA to identify websites</b> during the import process.</li>
+            </ul>
+            <li>Restart Firefox.</li>
+        </ol>
+
+        <h2>2. Add local host "DNS" entries</h2>
+
+        <p>Appedn the following lines to the end of your <code>/etc/hosts</code> file.</p>
+        <pre>
+        100.64.0.32    seccomm.secdev.acep.uaf.edu
+        100.64.0.32    auth.secdev.acep.uaf.edu
+        100.64.0.32    cryptpad.secdev.acep.uaf.edu
+        100.64.0.32    git.secdev.acep.uaf.edu
+        100.64.0.32    mattermost.secdev.acep.uaf.edu
+        100.64.0.32    nextcloud.secdev.acep.uaf.edu
+        100.64.0.32    owncloud.secdev.acep.uaf.edu
+        100.64.0.32    plane.secdev.acep.uaf.edu
+        </pre>
+
+        <h3>Linux and Mac</h3>
+
+        <p>Open a terminal and run the following command:</p>
+        <code>
+        sudo nano /etc/hosts
+        </code>
+
+        <h3>Windows</h3>
+
+        <ol>
+            <li>Open Notepad as Administrator.</li>
+            <li>Open the file: <code>C:\Windows\System32\drivers\etc\hosts</code></li>
+            <li>Edit and save.</li>
+        </ol>
+
+        
+        <!-- MAIN PAGE CONTENT END -->
+
+        <br>
+        <hr>
+
+        <a title="TLP:AMBER+STRICT - Limited disclosure, restricted to participants’ organization." href="https://www.cisa.gov/news-events/news/traffic-light-protocol-tlp-definitions-and-usage" target="_blank" style="text-decoration: none;">
+            <div id="tlp-amber-strict-banner" style="position: relative; width: 100%; left: calc(-1 * var(--body-margin-left, 0px)); padding: 0px;">
+                <div id="tlp-amber-strict-banner-content" style="display: flex; justify-content: space-between; align-items: center; padding-top: 0px; padding-bottom: 0px; padding-left: 10px; padding-right: 10px; color: #FFFFFF; background-color: #ffffff; border: 1px solid #000000;">
+                    <!-- Left section: TLP label -->
+                    <div style="display: flex; gap: 10px; align-items: center;">
+                        <div style="display: flex; gap: 10px; border: 2px solid #000000; border-radius: 5px; background-color: #a3a3a3; padding: 5px; width: max-content;">
+                            <div style="width: 20px; height: 20px; border: 2px solid #bbbbbb; border-radius: 50%; background-color: #bbbbbb;"></div>
+                            <div style="width: 20px; height: 20px; border: 2px solid #000000; border-radius: 50%; background-color: #FFC000;"></div>
+                            <div style="width: 20px; height: 20px; border: 2px solid #bbbbbb; border-radius: 50%; background-color: #bbbbbb;"></div>
+                        </div>
+                        <span style="font-weight: bold; font-size: 12pt; font-family: Helvetica, Arial, sans-serif; color: #FFC000; background-color: #000000; padding: 8px;">TLP:AMBER+STRICT</span>
+                        <!-- <p style="font-size: 11pt; font-family: Helvetica, Arial, sans-serif; color: #FFC000; padding: 8px;">Limited disclosure, restricted to participants’ organization.</p> -->
+                    </div>
+
+                    <!-- Right section: Logos -->
+                    <div style="display: flex; gap: 10px; align-items: center;">
+                        <p style="font-size: 11pt; font-family: Helvetica, Arial, sans-serif; color: #FFC000; padding: 8px;">Limited disclosure, restricted to participants’ organization.</p>
+                        <a title="Alaska Center for Energy and Power" href="https://acep.uaf.edu/" target="_blank" style="text-decoration: none;"><img src="../img/ACEPLogo.png" alt="ACEP Logo" style="height: 30px; width: auto;"></a>
+                        <a title="University of Alaska Fairbanks" href="https://www.uaf.edu/" target="_blank" style="text-decoration: none;"><img src="../img/uaflogoBlue.png" alt="UAF Logo" style="height: 30px; width: auto;"></a>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </body>
+</html>
